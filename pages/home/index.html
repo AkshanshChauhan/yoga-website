@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga:Home</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        outline: 0px solid red;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .top-section {
+        width: 100%;
+        height: 200vh;
+        background-position: bottom;
+        background-image: url("img/image_4.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .anim-one {
+        animation: text-anim 1s ease-in-out 0s reverse;
+    }
+    
+    .anim-two {
+        animation: text-anim 1.3s ease-in-out 0s reverse;
+    }
+    
+    @keyframes text-anim {
+        0% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        100% {
+            transform: translateX(-50px);
+            opacity: 0;
+        }
+    }
+    
+    .inner-title {
+        margin-left: 40px;
+    }
+    /* font and size (text) */
+    
+    .large {
+        font-size: 10vw;
+    }
+    
+    .very-small {
+        font-size: 2.6vw;
+    }
+    
+    .i {
+        font-style: italic;
+    }
+    
+    .thin {
+        font-weight: 100;
+    }
+    
+    .title {
+        font-weight: 700;
+    }
+    
+    .col-title {
+        color: #5D1D0D;
+    }
+    
+    .col-sub-title {
+        color: #964012;
+    }
+    /* Navigation Bar */
+    
+    nav {
+        height: 150px;
+        margin-bottom: 200px;
+        background-color: #3A0C02;
+        display: grid;
+        grid-template-rows: 70% 30%;
+    }
+    
+    .nav-bottom-section {
+        display: grid;
+        justify-content: right;
+        align-items: center;
+    }
+    
+    .nav-bottom-links {
+        margin-right: 40px;
+        display: flex;
+        gap: 10px;
+    }
+    
+    .nav-link-active {
+        color: #AC8FFF;
+        font-weight: bolder;
+    }
+    
+    .nav-link-unactive {
+        color: #FBF6C5;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+    
+    .nav-link-unactive:hover {
+        color: #fbc5c5;
+    }
+    /* Login Button Top */
+    
+    .nav-top-section {
+        display: grid;
+        grid-auto-flow: column;
+    }
+    
+    .nav-login-button {
+        width: 200px;
+        font-size: x-large;
+        font-weight: bolder;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        justify-self: right;
+        background-color: #067990;
+        outline: 0px;
+        border: 0px;
+        color: white;
+        margin-right: 40px;
+        height: 80%;
+    }
+    
+    .nav-login-button>a {
+        text-decoration: none;
+        color: white;
+    }
+    /* Login Section */
+    
+    .login-area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 100px 0px;
+    }
+    
+    .login-section {
+        width: 90%;
+        height: 500px;
+        outline: 1px solid #067A91;
+        display: flex;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    
+    .login-section-left {
+        width: 50%;
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .login-title {
+        font-size: xx-large;
+        font-weight: 700;
+        color: #067990;
+        width: 400px;
+    }
+    
+    .login-input {
+        padding: 10px;
+        border: 2px solid #067990;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .leg {
+        color: #067990;
+        padding: 0px 5px;
+    }
+    
+    .login-section-right {
+        background-image: url("img/image_3.jpg");
+        height: 100%;
+        width: 50%;
+        background-size: cover;
+    }
+    
+    .login-input-section {
+        color: #067990;
+        border: 0px;
+        outline: 0px;
+        width: 100%;
+        transform: translateY(-5px);
+        font-size: x-large;
+        background-color: transparent;
+    }
+    
+    .login-button {
+        color: white;
+        background-color: #067990;
+        padding: 10px;
+        font-size: larger;
+        border-radius: 10px;
+        border: 0px;
+        outline: 0px;
+        width: 100px;
+        justify-self: right;
+        font-weight: 700;
+    }
+    /* Card Data */
+    
+    .card-area {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0px 5vw;
+        gap: 50px;
+    }
+    
+    .main-card {
+        width: 655px;
+        height: fit-content;
+        padding-bottom: 10px;
+        outline: 1px solid #707070;
+        border-radius: 2px;
+        overflow: hidden;
+        animation: cardLoad 1s ease-in-out 0s reverse;
+    }
+    
+    @keyframes cardLoad {
+        0% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+        100% {
+            opacity: 0;
+            transform: translateY(100px);
+        }
+    }
+    
+    .main-card-background {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        width: 100%;
+        height: 250px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .main-card-background-title {
+        font-size: 3vw;
+        font-weight: 700;
+        color: white;
+    }
+    
+    .main-card-discription {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .ellipsis {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    
+    .read-button {
+        width: fit-content;
+        padding: 10px 40px;
+        font-weight: 600;
+        border: 0px;
+        outline: 0px;
+        background-color: #852DD4;
+        color: white;
+        border-radius: 5px;
+    }
+    
+    .main-card-bottom-buttons {
+        display: grid;
+        grid-auto-flow: column;
+        padding: 0px 10px;
+    }
+    
+    .main-card-controls {
+        justify-self: right;
+        display: flex;
+        gap: 10px;
+    }
+    
+    .control {
+        width: 40px;
+        height: 40px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+    
+    .control:hover {
+        color: red;
+    }
+    
+    .card-area-heading {
+        font-size: 4vw;
+        font-weight: 700;
+        color: #852DD4;
+        margin: 50px 5vw;
+        margin-top: 0px;
+    }
+</style>
+<script src="/jquery.min"></script>
+
+<body>
+    <div class="top-section">
+        <nav>
+            <div class="nav-top-section">
+                <button class="nav-login-button"><a href="#login">Login</a></button>
+            </div>
+            <div class="nav-bottom-section">
+                <div class="nav-bottom-links">
+                    <a class="nav-link-active">HOME</a>
+                    <a class="nav-link-unactive">LOCATION'S</a>
+                    <a class="nav-link-unactive">CONTACT</a>
+                    <a class="nav-link-unactive">ABOUT</a>
+                    <a class="nav-link-unactive">BLOG'S</a>
+                </div>
+            </div>
+        </nav>
+        <div class="inner-title">
+            <div class="large title col-title anim-one">LAND OF YOGI</div>
+            <div class="very-small thin i col-sub-title anim-two">"Life is not meant to be in one place. Let's go to Rishikesh"</div>
+        </div>
+    </div>
+    <div class="login-area" id="login">
+        <div class="login-section">
+            <div class="login-section-left">
+                <p class="login-title">Login</p>
+                <fieldset class="login-input">
+                    <legend class="i leg">email</legend>
+                    <input class="login-input-section" type="email">
+                </fieldset>
+                <fieldset class="login-input">
+                    <legend class="i leg">password</legend>
+                    <input class="login-input-section" type="password" placeholder="">
+                </fieldset>
+                <button class="login-button">login</button>
+            </div>
+            <div class="login-section-right">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="card-area-heading">Location's</div>
+    <div class="card-area">
+    </div>
+</body>
+<script>
+    const mainCard = document.querySelector(".card-area");
+    mainCard.style.display = "none";
+
+    function getCardData() {
+        $.ajax({
+            method: "get",
+            url: "/api/location/all",
+            success: (res) => {
+                res.location.map((data) => {
+                    const mainCard = document.createElement("div");
+                    mainCard.className = "main-card";
+                    mainCard.innerHTML = `
+                        <div class="main-card-background" style="background-image: url(${data.image})">
+                            <div class="main-card-background-title">${data.name}</div>
+                        </div>
+                        <div class="main-card-discription ellipsis">${data.description}</div>
+                        <div class="main-card-bottom-buttons">
+                            <button class="read-button">READ</button>
+                            <div class="main-card-controls">
+                                <div class="control" style="background-image: url('/icon/image.svg')"></div>
+                                <div class="control" style="background-image: url('/icon/share.svg')"></div>
+                                <div class="control" style="background-image: url('/icon/like.svg')"></div>
+                            </div>
+                        </div>
+                    `;
+                    const cardArea = document.querySelector(".card-area");
+                    cardArea.appendChild(mainCard);
+                })
+            }
+        })
+    }
+
+    getCardData();
+
+    function callGetCardData() {
+        mainCard.style.display = "";
+    }
+
+    window.onscroll = () => {
+        if (window.scrollY > 1560) {
+            callGetCardData();
+        }
+    }
+</script>
+
+</html>

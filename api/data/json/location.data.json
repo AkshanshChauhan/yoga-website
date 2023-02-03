@@ -1,0 +1,53 @@
+{
+    "location": [{
+            "name": "Triveni Ghat",
+            "image": "/img/location/location_1.jpg",
+            "description": "It is the biggest & the most famous ghat at the banks of the Ganges River. It is believed that the lord Krishna visited here when he got hurt by the arrow of Jara- a hunter. One can visit the Geeta mandir & the Laxmi Narayan mandir which is situated on the bank of the Triveni Ghat. This sacred ghat is used by the most pilgrim for ritual baths to get cleansed from their sins. The main attraction of Triveni Ghat is the evening aarti of the Goddess Ganga which is commonly known as “Maha Aarti”."
+        },
+        {
+            "name": "Lakshman Jhula",
+            "image": "/img/location/location_1.jpg",
+            "description": "Lakshman Jhula is a 450 feet long iron suspension bridge across the river Ganges. It connects the two villages of ‘Tapoven’ in Tehri Garhwal district to ‘Jonk’ in Pauri Garhwal district. It is 5km far from the city of Rishikesh. Despite its location, it is one of the iconic landmarks of Rishikesh. The bridge got its name from the facts that Lakshman, the younger brother of Lord Ram, cross the Ganga using two jute ropes. Lakshman Jhula offers an intensive view of river Ganga and temples in Rishikesh."
+        },
+        {
+            "name": "Ram Jhula",
+            "image": "/img/location/location_1.jpg",
+            "description": "Ramjhula is also an iron suspension bridge across the river Ganges. This bridge is located 3km far from the city of Rishikesh. It connects the ‘Sivananda Nagar area’ of Muni Ki Reti in Tehri Garhwal district to ‘Swarg ashram’ in Pauri Garhwal district. It has many temples & ashrams on its both side. It has a very prominent view of river Ganga, temples, ashram & mountains. Though similar in design, this bridge is bigger than Lakshman Jhula. This bridge is 750 feet long."
+        },
+        {
+            "name": "Tera (13) Manzil Temple",
+            "image": "/img/location/location_1.jpg",
+            "description": "Tera Manzil Temple is a famous tourist spot in Rishikesh. It is a holy multi-story temple located on the banks of the river Ganges in Lakshman Jhula Rishikesh. Due to its huge symmetric architecture visitors get attracted to it. From the top floor of the temple, one can witness the intensive view of sunshine & sunset. As it is located near the Lakshman Jhula pul & the Ganges river one can see the whole temples & ashram of the city in one frame."
+        },
+        {
+            "name": "Swami Dayananda Ashram",
+            "image": "/img/location/location_1.jpg",
+            "description": "It is one of the attractive places in Rishikesh. It is located near the Ram Jhula area. This ashram was built by ‘Swami Dayanand Saraswati’ in 1960. It has more than 150 rooms with attached bathrooms in it. The rooms here are of different types. They are simple but comfortable even a bookstore is there in it. Inside it, there is a beautiful small temple. On its second floor, there is a large yoga hall, where yoga classes are held daily. This ashram is at 3km from Rishikesh. It has a really beautiful location."
+        },
+        {
+            "name": "Neelkanth Mahadev Temple",
+            "image": "/img/location/location_1.jpg",
+            "description": "It is a sacred & famous temple of Lord Shiva in the Pauri Garhwal district of Uttarakhand. Neelkant Temple is 32km far from Rishikesh. It is situated on a hill at a height of 1330mtrs. It is above ‘Swargashram adjacent to Nar Narayan mountain range. This temple has very attractive & colourful architecture. A natural spring is situated in the temple where devotees take a holy bath. Maha-Shivratri is celebrated here with fuel rejoice & a large number of devotees visit the temple on this auspicious day."
+        },
+        {
+            "name": "Bharat Mandir",
+            "image": "/img/location/location_1.jpg",
+            "description": "Bharat Mandir is the most famous temple in Rishikesh, situated in the middle of the city. In 789 A.D on the day ‘Basant Panchami’ Jagadguru Adi Shankar Acharya reinstalled it. On the day of Akshaya Tritiya, pilgrims take 108 parikramas of Lord Shri Hrishikesh Narayan at this temple. It is the only day when the lord’s feet are uncovered. Near the temple, there is a sacred ghat called Triveni ghat, where you can enjoy Ganga aarti every evening."
+        },
+        {
+            "name": "Swargashram",
+            "image": "/img/location/location_1.jpg",
+            "description": "Swargashram is located near Ramjhula in Rishikesh. It was built in the memory of Swami Vivekananda. Due to its ethnic touch. It is famous among foreign tourists. There are lots of ashrams & temples inside it. Many religious activities like charity, meditation, aarti take place inside it. It also has many different stores, shopping complexes, Cafes, parks, ayurvedic dispensaries, hotels & restaurants for the guest. ‘Bhajan & kirtan’   is a daily activity here."
+        },
+        {
+            "name": "Parmarth Niketan",
+            "image": "/img/location/location_1.jpg",
+            "description": "It is an ashram located in Rishikesh, Uttarakhand. It was situated on the lap of the beautiful Himalayas along the banks of the Ganges River. It was founded in 1942 by Pujya Swami Sukhdevanandji Maharaj. The ashram, Parmarth Niketan is a true spiritual heaven, lying on the holy banks of the Mother Ganga. It’s the largest ashram in Rishikesh with over 1000 rooms. Parmarth Niketan provides a clean, pure and sacred atmosphere like a well as an abundant beautiful garden to the thousands of pilgrim."
+        },
+        {
+            "name": "Geeta Bhavan",
+            "image": "/img/location/location_1.jpg",
+            "description": "Geeta Bhavan is located on the banks of holy Ganges in Swargashram. It is a beautiful hermitage for the homeless and travelers. It can provide free stay & accommodation to more than 1000 devotees at once. As it remains crowded all the time, but the best time to visit here is in summer as long the Satsang program are organized by the Devotees. It provides free dispensary and pure vegetarian food, grocery items, and Indian sweets. Inside it, there is a sacred banyan tree, where once many saints performed penance. There are two Ghats here from where devotees take a holy dip in the Ganges River."
+        }
+    ]
+}
