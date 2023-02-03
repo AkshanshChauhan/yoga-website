@@ -15,7 +15,7 @@ app.get("/api/location/all", (req, res) => {
 app.get("/jquery.min", (req, res) => {
     res.sendFile(__dirname + "/node_modules/jquery/dist/jquery.min.js")
 })
-
-app.listen(1000, () => {
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
     console.log("server started!")
 })
