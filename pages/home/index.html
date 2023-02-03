@@ -217,9 +217,10 @@
     .card-area {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         margin: 0px 5vw;
         gap: 50px;
+        transition-duration: 1s;
     }
     
     .main-card {
@@ -229,18 +230,6 @@
         outline: 1px solid #707070;
         border-radius: 2px;
         overflow: hidden;
-        animation: cardLoad 1s ease-in-out 0s reverse;
-    }
-    
-    @keyframes cardLoad {
-        0% {
-            opacity: 1;
-            transform: translateY(0px);
-        }
-        100% {
-            opacity: 0;
-            transform: translateY(100px);
-        }
     }
     
     .main-card-background {
@@ -314,6 +303,32 @@
         margin: 50px 5vw;
         margin-top: 0px;
     }
+    
+    .loading-section {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        backdrop-filter: blur(100px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0px;
+    }
+    
+    .loading {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 20px solid rgb(0, 106, 255);
+        border-bottom: 20px solid rgb(65, 211, 255);
+        animation: load 1s cubic-bezier(1, 1, 1, 1) 0s infinite;
+    }
+    
+    @keyframes load {
+        100% {
+            transform: rotateZ(360deg);
+        }
+    }
 </style>
 <script src="/jquery.min"></script>
 
@@ -361,10 +376,18 @@
     <div class="card-area-heading">Location's</div>
     <div class="card-area">
     </div>
+    <div class="loading-section">
+        <div class="loading"></div>
+        <p class="heading">Loading Content...</p>
+    </div>
 </body>
 <script>
+    document.body.onload = () => {
+        document.querySelector(".loading-section").style.display = "none";
+    }
     const mainCard = document.querySelector(".card-area");
-    mainCard.style.display = "none";
+    mainCard.style.opacity = "0";
+    mainCard.style.transform = "translateY(100px)";
 
     function getCardData() {
         $.ajax({
@@ -398,11 +421,12 @@
     getCardData();
 
     function callGetCardData() {
-        mainCard.style.display = "";
+        mainCard.style.opacity = "1";
+        mainCard.style.transform = "translateY(0px)";
     }
 
     window.onscroll = () => {
-        if (window.scrollY > 1560) {
+        if (window.scrollY > 2000) {
             callGetCardData();
         }
     }
